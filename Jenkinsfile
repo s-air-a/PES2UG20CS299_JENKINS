@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                Error
                 sh 'g++ -o sample sample.cpp'
                 build 'PES2UG20CS299-1'
                 echo 'Build stage successful'
